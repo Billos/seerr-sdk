@@ -1,6 +1,6 @@
 {
   "name": "@billos/seerr-sdk",
-  "version": "1.0.0-sdk.2",
+  "version": "1.0.0-sdk.5",
   "description": "TypeScript SDK for Seerr, generated from its OpenAPI specification",
   "main": "./dist/index.js",
   "module": "./dist/index.js",

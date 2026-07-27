@@ -5,7 +5,7 @@ A TypeScript SDK for [Seerr](https://seerr.dev/), automatically generated from t
 ## Installation
 
 ```bash
-npm install @billos/seerr-sdk@1.0.0-sdk.3
+npm install @billos/seerr-sdk@1.0.0-sdk.5
 ```
 
 ## Usage
