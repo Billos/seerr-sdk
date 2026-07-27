@@ -16,19 +16,19 @@ import { WatchlistService } from "@billos/seerr-sdk";
 
 const client = createClient({
   auth: "your-api-token",
-  baseUrl: "https://your-firefly-instance/api",
+  baseUrl: "https://your-seerr-instance/api/v1",
 });
 
 await WatchlistService.deleteWatchlistByTmdbId({
   client,
-  path: { tmdbId: `329` },
+  path: { tmdbId: "329" },
   query: { mediaType: "movie" },
 });
 ```
 
 ## SDK Generation
 
-This SDK is generated using [@hey-api/openapi-ts](https://heyapi.dev/) from the Firefly III OpenAPI specification.
+This SDK is generated using [@hey-api/openapi-ts](https://heyapi.dev/) from the Seerr OpenAPI specification.
 
 To regenerate the SDK:
 
