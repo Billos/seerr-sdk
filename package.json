@@ -1,0 +1,55 @@
+{
+  "name": "@billos/seerr-sdk",
+  "version": "1.0.0-sdk.2",
+  "description": "TypeScript SDK for Seerr, generated from its OpenAPI specification",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./client": {
+      "types": "./dist/client.d.ts",
+      "import": "./dist/client/index.js",
+      "default": "./dist/client/index.js"
+    }
+  },
+  "scripts": {
+    "generate": "openapi-ts",
+    "build": "tsc",
+    "prepublishOnly": "npm run generate && npm run build"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Billos/seerr-sdk.git"
+  },
+  "keywords": [
+    "seerr",
+    "typescript",
+    "sdk",
+    "openapi",
+    "finance"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Billos/seerr-sdk/issues"
+  },
+  "homepage": "https://github.com/Billos/seerr-sdk#readme",
+  "devDependencies": {
+    "@hey-api/openapi-ts": "^0.94.5",
+    "typescript": "^6.0.2"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
